@@ -3,10 +3,18 @@ import { ApolloServer,gql} from "apollo-server";
 // explain the shape of the data to GraphQL
 // using GraphQL SDK
 const typeDefs = gql`
+    type User{
+    id:ID
+    username: String
+    }
+    type Tweet {
+    id:ID
+    text:String
+    author: User
+    }
     type Query {
-        text: String
-        allFilms: String
-        film: String
+       allTweets: [Tweet]
+tweet(id: ID):  Tweet
 }
 `;
 
