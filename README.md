@@ -1,4 +1,6 @@
-# GraphQL API
+# GraphQL로 영화 API 만들기
+
+## GraphQL API
 
 - [Tweetql](/Tweetql/)
 - [graphql-spec](https://github.com/graphql/graphql-spec)
